@@ -23,23 +23,7 @@ class CreateDureeformationsTable extends Migration
             $table->date('datefin');
             $table->string('prix');
             $table->timestamps();
-            $table->foreign('cour_id')
-                  ->references('id') 
-                  ->on('cours')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-
-            $table->foreign('salle_id')
-                  ->references('id') 
-                  ->on('salles')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-            $table->foreign('formateur_id')
-                  ->references('id') 
-                  ->on('formateurs')
-                  ->onDelete('cascade')
-                  ->onUpdate('cascade');
-
+          
             
         });
     }
