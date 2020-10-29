@@ -80,9 +80,12 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="title m-b-md" style="color:blue">
+                INSCRIPTION  CRDL
                 </div>
+             <div> 
+             <img src="richard.png">           
+             </diV>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

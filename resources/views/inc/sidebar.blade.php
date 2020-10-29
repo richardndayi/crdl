@@ -1,4 +1,4 @@
-<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar" style="background:yellow">
+<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar" style="background:gray">
 		<div class="profile-sidebar">
 			<div class="profile-userpic">
 				<img src="http://placehold.it/50/30a5ff/fff" class="img-responsive" alt="">
