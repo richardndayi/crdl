@@ -119,6 +119,12 @@
 					</a></li> -->
 				</ul>
 			</li>
-			<li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<!-- <li><a href="login.html"><em class="fa fa-power-off">&nbsp;</em> Logout</a> -->
+			<a class="dropdown-item" href="{{ route('register') }}">
+			<li class="nav-item">
+             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+			
+			</li>
 		</ul>
 	</div>

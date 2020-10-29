@@ -57,12 +57,20 @@
 			</li> -->
 		
             <ul class="nav navbar-top-links navbar-right">
-			<a href="{{url('participations/create')}}"> <em class="fa fa-power-off">&nbsp;</em> Logout</a></li>
+			<a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form></li>
 
 
 				<ul class="nav navbar-top-links navbar-center">
-					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-						<em class="fa fa-envelope"></em><span class="label label-danger">15</span>
+					<!-- <li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+						<em class="fa fa-envelope"></em><span class="label label-danger">15</span> -->
 					</a>
 						<ul class="dropdown-menu dropdown-messages">
 							<li>
@@ -92,8 +100,8 @@
 							</li>
 						</ul>
 					</li>
-					<li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-						<em class="fa fa-bell"></em><span class="label label-info">5</span>
+					<!-- <li class="dropdown"><a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+						<em class="fa fa-bell"></em><span class="label label-info">5</span> -->
 					</a>
 						<ul class="dropdown-menu dropdown-alerts">
 							<li><a href="#">
